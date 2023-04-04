@@ -1,3 +1,8 @@
 Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
 
 Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+- Security groups allows unrestricted access to ports with high risk => restrict high risk port, for example, port 22 for EC2 instance.
+- EC2 instance has public IPv4 address => remove public IPv4 and use instance ARN to add EC2 instance to target group of the load balancer.
+- S3 Block Public Access setting is not enabled at the bucket-level => enable 'Block Public Access' setting on the corresponding S3 buckets.
+- Application Load Balancer is not configured to redirect all HTTP requests to HTTPS => configure load balancer to redirect all HTTP requests to HTTPS.
