@@ -2,12 +2,30 @@
 
 ## Scan infrastructure as code templates
 
-### Example vulnerability
+Checkov: It is for analyzing static codes for IaC. To detect cloud misconfigurations, it scans your cloud infrastructure, which is managed in Kubernetes, Terraform, and Cloudformation.
+TFLint: A Terraform linter – TFLint is focused on checking possible errors and provides the best security practice.
+Terrafirma: Terrafirma is another tool for static code analysis used for Terraform plans.
+Accurics: Accurics provides a platform that helps you detect and remediate risks across your cloud infrastructure.
+CloudSploit: CloudSploit provides continuous security monitoring and compliance reporting for cloud infrastructure.
+
+Example vulnerabilities: Unsecured credentials, unsecure default configurations could lead to data exposure
 
 ##Scan AMI’s or containers for OS vulnerabilities
 
-### Example vulnerability
+Falco: Falco is an open-source project and a threat detection engine for Kubernetes. It is a runtime security tool to detect anomalous activity in hosts and containers running on Kubernetes. It detects any unexpected behaviors in your application and alerts you about the threats at runtime.
+Atomic CLI: Scans images and uses OpenSCAP to determine security vulnerabilities.
+CloudForms: Scans images using OpenSCAP (same as Atomic) and also adds capabilities like taking action when container images are vulnerable, automatically scanning new images and even reporting.
+Dagda: Scans for vulnerabilities, Trojans, viruses, and malware in Docker containers.
+Dockscan: Scans for security vulnerabilities with a low number of commits.
+
+Example vulnerabilities: Outdated version, trojans, viruses and malware
 
 ##Scan an AWS environment for cloud configuration vulnerabilities
 
-### Example vulnerability
+AWS Config: AWS Config is an effective tool for assessing, evaluating, recording, auditing configurations of the resources in your AWS environment.
+Inspector: Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
+GuardDuty: GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads.
+Macie: Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data in AWS.
+Security Hub: Security Hub provides a comprehensive view of your high-priority security alerts and compliance status across your AWS accounts.
+
+Example vulnerabilities: weak account credentials/authentication, loose inbound/outbound rules, redundant priviledges/policies provisioning
